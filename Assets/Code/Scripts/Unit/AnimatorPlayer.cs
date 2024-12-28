@@ -10,6 +10,11 @@ public class AnimatorPlayer : MonoBehaviour
 
     private Animator _animator;
 
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
     private void OnEnable()
     {
         _unit.DamageReceived += SetDamageTrigger;
@@ -20,11 +25,6 @@ public class AnimatorPlayer : MonoBehaviour
     {
         _unit.DamageReceived -= SetDamageTrigger;
         _unit.TreatmentReceived -= SetTreatmentTrigger;
-    }
-
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
     }
 
     private void SetDamageTrigger(float damage)

@@ -9,24 +9,24 @@ public class Unit : MonoBehaviour
     public event Action<float> DamageReceived;
     public event Action<float> TreatmentReceived;
 
-    private void OnEnable()
-    {
-        Health.AmountWasted += Destroy;
-    }
-
-    private void OnDisable()
-    {
-        Health.AmountWasted -= Destroy;
-    }
-
     private void Awake()
     {
         Health = GetComponent<Health>();
     }
 
+    private void OnEnable()
+    {
+        Health.AmountWasted += Destroy;
+    }
+
     private void Start()
     {
         Health.Initialize();
+    }
+
+    private void OnDisable()
+    {
+        Health.AmountWasted -= Destroy;
     }
 
     public void TakeDamage(float amount)

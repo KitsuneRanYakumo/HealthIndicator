@@ -329,7 +329,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308041677}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -378,7 +378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423403816
@@ -1442,13 +1442,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 958995469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9343acc96e385974589f8db1ecb5bee0, type: 3}
+  m_Script: {fileID: 11500000, guid: d8206ce4e9e8c3e4c817e46d05914ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _healthChangedButton: {fileID: 1016348037}
-  _typeChangedHealth: 0
-  _amount: 20
   _unit: {fileID: 1471432646}
+  _treatment: 5
 --- !u!1 &1016348035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,8 +1620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 1471432647}
   _slider: {fileID: 875064210}
-  _rateOfChange: 0.5
-  _timeOneTick: 0.01
+  _rateOfChange: 1
 --- !u!1 &1061942517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1669,13 +1667,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061942517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9343acc96e385974589f8db1ecb5bee0, type: 3}
+  m_Script: {fileID: 11500000, guid: 21c7942f78b28cf44b423f1c67b47f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _healthChangedButton: {fileID: 581872904}
-  _typeChangedHealth: 1
-  _amount: 10
   _unit: {fileID: 1471432646}
+  _damage: 5
 --- !u!1 &1162350082
 GameObject:
   m_ObjectHideFlags: 0
