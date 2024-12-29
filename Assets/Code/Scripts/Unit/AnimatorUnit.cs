@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
-public class AnimatorPlayer : MonoBehaviour
+public class AnimatorUnit : MonoBehaviour
 {
     [SerializeField] private Unit _unit;
 

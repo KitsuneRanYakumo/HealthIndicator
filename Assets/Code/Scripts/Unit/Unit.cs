@@ -29,13 +29,15 @@ public class Unit : MonoBehaviour
         Health.AmountWasted -= Destroy;
     }
 
-    public void TakeDamage(float amount)
+    public void TryTakeDamage(float amount)
     {
+        Health.TryTakeDamage(amount);
         DamageReceived?.Invoke(amount);
     }
 
-    public void Heal(float amount)
+    public void TryHeal(float amount)
     {
+        Health.TryTakeTreatment(amount);
         TreatmentReceived?.Invoke(amount);
     }
 

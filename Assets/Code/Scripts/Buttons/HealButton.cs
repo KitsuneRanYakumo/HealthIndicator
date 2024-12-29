@@ -6,6 +6,6 @@ public class HealButton : ChangerHealth
 
     protected override void ChangeHealth()
     {
-        Unit.Heal(_treatment);
+        Unit.TryHeal(_treatment);
     }
 }
