@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class ChangerHealth : MonoBehaviour
+public abstract class HealthChanger : MonoBehaviour
 {
     [SerializeField] private Button _healthChangedButton;
     [SerializeField] private Unit _unit;

@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class HealButton : ChangerHealth
+public class HealButton : HealthChanger
 {
     [SerializeField] private float _treatment;
 
     protected override void ChangeHealth()
     {
-        Unit.TryHeal(_treatment);
+        Unit.Heal(_treatment);
     }
 }

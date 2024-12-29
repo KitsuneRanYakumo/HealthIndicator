@@ -4,10 +4,10 @@ using UnityEngine;
 [RequireComponent(typeof(Health))]
 public class Unit : MonoBehaviour
 {
-    public Health Health { get; private set; }
-
     public event Action<float> DamageReceived;
     public event Action<float> TreatmentReceived;
+
+    public Health Health { get; private set; }
 
     private void Awake()
     {
@@ -29,15 +29,15 @@ public class Unit : MonoBehaviour
         Health.AmountWasted -= Destroy;
     }
 
-    public void TryTakeDamage(float amount)
+    public void TakeDamage(float amount)
     {
-        Health.TryTakeDamage(amount);
+        Health.TakeDamage(amount);
         DamageReceived?.Invoke(amount);
     }
 
-    public void TryHeal(float amount)
+    public void Heal(float amount)
     {
-        Health.TryTakeTreatment(amount);
+        Health.TakeTreatment(amount);
         TreatmentReceived?.Invoke(amount);
     }
 

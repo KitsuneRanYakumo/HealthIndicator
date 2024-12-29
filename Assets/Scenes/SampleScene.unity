@@ -1447,7 +1447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthChangedButton: {fileID: 1016348037}
   _unit: {fileID: 1471432646}
-  _treatment: 5
+  _treatment: 30
 --- !u!1 &1016348035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthChangedButton: {fileID: 581872904}
   _unit: {fileID: 1471432646}
-  _damage: 5
+  _damage: 30
 --- !u!1 &1162350082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,7 +1791,6 @@ GameObject:
   - component: {fileID: 1471432648}
   - component: {fileID: 1471432647}
   - component: {fileID: 1471432646}
-  - component: {fileID: 1471432645}
   - component: {fileID: 1471432650}
   - component: {fileID: 1471432651}
   m_Layer: 5
@@ -1820,18 +1819,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.5, y: -100}
   m_SizeDelta: {x: -811, y: -390}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1471432645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471432643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39f9b2c3b6bf2ae4a81adca114e92af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1471432646
 MonoBehaviour:
   m_ObjectHideFlags: 0

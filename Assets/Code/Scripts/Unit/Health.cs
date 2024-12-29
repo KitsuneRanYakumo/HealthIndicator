@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
         AmountChanged?.Invoke(_amount, _maxAmount);
     }
 
-    public void TryTakeTreatment(float treatment)
+    public void TakeTreatment(float treatment)
     {
         if (treatment <= 0)
             return;
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
         AmountChanged?.Invoke(_amount, _maxAmount);
     }
 
-    public void TryTakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         if (damage <= 0)
             return;
